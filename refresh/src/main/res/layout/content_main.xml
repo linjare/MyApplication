@@ -10,5 +10,23 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.kj.refresh.MainActivity" tools:showIn="@layout/activity_main">
 
-
+    <!--<com.example.kj.refresh.view.TableEditTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:maxLines="1"
+        android:maxLength="14"
+        android:inputType="number"
+        app:table_row="7"
+        app:default_color="@android:color/holo_red_dark"
+        app:last_table_color="#1111ff"
+        app:table_radius="4dp"
+        />-->
+    <com.example.kj.refresh.view.NumberView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        />
 </RelativeLayout>

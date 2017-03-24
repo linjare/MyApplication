@@ -36,15 +36,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        for (int i = 0; i < 100; i++){
-            mDatas.add("==="+i);
-        }
-        mRecycler = (RecyclerView) findViewById(R.id.recycler);
-        LinearLayoutManager manager = new LinearLayoutManager(this);
-        manager.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecycler.setLayoutManager(manager);
-        mRecycler.setAdapter(new MyAdapter());
     }
 
     @Override
