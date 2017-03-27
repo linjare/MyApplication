@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="TableEditTextView">
-        <attr name="table_row" format="integer"/>
+    <declare-styleable name="NumberView">
+        <attr name="row" format="integer"/>
         <attr name="default_color" format="color"/>
-        <attr name="last_table_color" format="color"/>
-        <attr name="table_radius" format="dimension"/>
+        <attr name="second_color" format="color"/>
     </declare-styleable>
 </resources>

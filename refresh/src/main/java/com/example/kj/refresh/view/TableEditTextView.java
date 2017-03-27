@@ -31,11 +31,11 @@ public class TableEditTextView extends android.support.v7.widget.AppCompatEditTe
 
     public TableEditTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TableEditTextView);
-        mTableRow = typedArray.getInt(R.styleable.TableEditTextView_table_row, 7);
-        mDefaultColor = typedArray.getColor(R.styleable.TableEditTextView_default_color, Color.RED);
-        mLastColor = typedArray.getColor(R.styleable.TableEditTextView_last_table_color, Color.BLUE);
-        mTableRadius = typedArray.getDimension(R.styleable.TableEditTextView_table_radius, 3);
+//        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TableEditTextView);
+//        mTableRow = typedArray.getInt(R.styleable.TableEditTextView_table_row, 7);
+//        mDefaultColor = typedArray.getColor(R.styleable.TableEditTextView_default_color, Color.RED);
+//        mLastColor = typedArray.getColor(R.styleable.TableEditTextView_last_table_color, Color.BLUE);
+//        mTableRadius = typedArray.getDimension(R.styleable.TableEditTextView_table_radius, 3);
 
 
     }

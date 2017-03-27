@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
@@ -14,12 +15,18 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.kj.refresh.view.NumberView;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecycler;
     private List<String> mDatas = new ArrayList<>();
+
+    private NumberView mNumberView;
+    private TextView mTextView;
+    String info = "   ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        mTextView = (TextView) findViewById(R.id.info);
+        mNumberView = (NumberView) findViewById(R.id.number_view);
+        mNumberView.setItemSelectListener(new NumberView.OnItemSelectListener() {
+            @Override
+            public void onItemSelected(int item, int type) {
+                info += item + "   ";
+                mTextView.setText("号码: "+info);
+
+                Log.d("===",type+"==="+item);
             }
         });
     }
